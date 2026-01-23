@@ -220,8 +220,8 @@ const Home = () => {
                             {clientsData.clients.map((client, index) => (
                                 <div key={index} className="client-logo-card">
                                     <div className="client-logo-placeholder">
-                                        {client.logo ? (
-                                            <img src={client.logo} alt={client.name} className="client-logo-img" />
+                                        {client.image ? (
+                                            <img src={client.image} alt={client.name} className="client-logo-img" />
                                         ) : (
                                             <span className="logo-initials">
                                                 {client.name.split(' ').map(word => word[0]).join('').slice(0, 2)}
@@ -230,8 +230,8 @@ const Home = () => {
                                     </div>
                                     <div className="client-info">
                                         <span className="client-name">{client.name}</span>
-                                        {client.tagline && (
-                                            <span className="client-tagline">{client.tagline}</span>
+                                        {client.location && (
+                                            <span className="client-tagline">{client.location}</span>
                                         )}
                                     </div>
                                 </div>
@@ -242,8 +242,8 @@ const Home = () => {
                             {clientsData.clients.map((client, index) => (
                                 <div key={`dup-${index}`} className="client-logo-card">
                                     <div className="client-logo-placeholder">
-                                        {client.logo ? (
-                                            <img src={client.logo} alt={client.name} className="client-logo-img" />
+                                        {client.image ? (
+                                            <img src={client.image} alt={client.name} className="client-logo-img" />
                                         ) : (
                                             <span className="logo-initials">
                                                 {client.name.split(' ').map(word => word[0]).join('').slice(0, 2)}
@@ -252,8 +252,8 @@ const Home = () => {
                                     </div>
                                     <div className="client-info">
                                         <span className="client-name">{client.name}</span>
-                                        {client.tagline && (
-                                            <span className="client-tagline">{client.tagline}</span>
+                                        {client.location && (
+                                            <span className="client-tagline">{client.location}</span>
                                         )}
                                     </div>
                                 </div>
