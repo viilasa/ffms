@@ -302,6 +302,112 @@
     padding-bottom: 2rem;
 }
 
+/* Regional Teams Section */
+.regional-teams-section {
+    background: var(--white);
+}
+
+.regional-teams-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.regional-team-card {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--gray-200);
+    transition: all var(--transition-base);
+}
+
+.regional-team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.regional-team-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.regional-team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.regional-team-card:hover .regional-team-image img {
+    transform: scale(1.05);
+}
+
+.regional-team-info {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(193, 39, 45, 0.03) 0%, rgba(193, 39, 45, 0.08) 100%);
+}
+
+.regional-team-info h3 {
+    font-size: 1.75rem;
+    color: var(--gray-900);
+    margin: 0 0 0.75rem 0;
+    font-weight: 700;
+}
+
+.regional-team-info p {
+    color: var(--gray-600);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .regional-teams-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .regional-team-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .regional-team-image {
+        height: 280px;
+    }
+
+    .regional-team-info {
+        padding: 1.5rem;
+    }
+
+    .regional-team-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .regional-team-info p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .regional-team-image {
+        height: 220px;
+    }
+
+    .regional-team-info {
+        padding: 1.25rem;
+    }
+
+    .regional-team-info h3 {
+        font-size: 1.25rem;
+    }
+}
+
 /* Certifications */
 .certifications {
     padding-top: 2rem;
@@ -485,55 +591,165 @@
 @media (max-width: 480px) {
     .about-hero {
         min-height: 30vh;
+        padding-top: 70px;
     }
 
     .about-hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 1.2;
     }
 
-    .story-text h2 {
-        font-size: 1.35rem;
+    .about-hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .story-text h2,
+    .founder-text h2 {
+        font-size: 1.25rem;
+    }
+
+    .story-text p,
+    .founder-text p,
+    .founder-bio p {
+        font-size: 0.9rem;
+        line-height: 1.7;
     }
 
     .story-image img {
+        max-height: 250px;
+        border-radius: var(--radius-lg);
+    }
+
+    .founder-img-wrapper img {
         max-height: 280px;
-        border-radius: var(--radius-xl);
+    }
+
+    .founder-name {
+        font-size: 1.1rem;
+    }
+
+    .founder-role {
+        font-size: 0.85rem;
+    }
+
+    .founder-badge {
+        padding: 1.5rem 1rem 1rem;
     }
 
     .value-card,
     .team-card {
-        padding: 1.5rem 1rem;
+        padding: 1.25rem 1rem;
     }
 
     .value-icon,
     .team-icon {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
+        margin-bottom: 1rem;
     }
 
     .value-icon {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
 
     .value-card h3,
     .team-card h3 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .value-card p,
+    .team-card p {
+        font-size: 0.85rem;
+        line-height: 1.6;
     }
 
     .mv-card {
-        padding: 1.5rem 1.25rem;
+        padding: 1.25rem 1rem;
     }
 
     .mv-icon {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .mv-icon svg {
+        width: 24px;
+        height: 24px;
     }
 
     .mv-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
+    }
+
+    .mv-card p {
+        font-size: 0.85rem;
+        line-height: 1.7;
     }
 
     .team-role {
-        font-size: 0.85rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    .cert-item {
+        padding: 1rem 0.875rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .cert-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .cert-item span {
+        font-size: 0.85rem;
+    }
+
+    /* Section badges and headers */
+    .section-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .about-hero-content h1 {
+        font-size: 1.25rem;
+    }
+
+    .story-text h2,
+    .founder-text h2 {
+        font-size: 1.15rem;
+    }
+
+    .value-card,
+    .team-card,
+    .mv-card {
+        padding: 1rem;
+    }
+
+    .value-icon,
+    .team-icon,
+    .mv-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .value-card h3,
+    .team-card h3,
+    .mv-card h3 {
+        font-size: 1rem;
+    }
+
+    .cert-item span {
+        font-size: 0.8rem;
     }
 }

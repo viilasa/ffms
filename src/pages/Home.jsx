@@ -15,12 +15,11 @@ const Home = () => {
 
     // Hero background images - Corporate facility management related
     const heroImages = [
-        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80', // Corporate building exterior
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80', // Modern office interior
+        'https://res.cloudinary.com/ddhhlkyut/image/upload/v1769334542/home_tuohlq.png', // First hero image
+        'https://res.cloudinary.com/ddhhlkyut/image/upload/v1769336089/tG_yiqlfz.jpg', // Second hero image
         'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80', // Professional office cleaning
         'https://images.unsplash.com/photo-1582653291997-079a1c04e5a1?w=1920&q=80', // Building maintenance/HVAC
         'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1920&q=80', // Clean office environment
-        'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1920&q=80'  // Corporate building facade
     ];
 
     useEffect(() => {
@@ -192,6 +191,59 @@ const Home = () => {
                         >
                             <div className="stat-number">{counts.team}+</div>
                             <div className="stat-label">Expert Professionals</div>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Regional Teams Section */}
+            <section className="regional-teams-section section">
+                <div className="container">
+                    <div className="section-header scroll-reveal">
+                        <span className="section-badge">Our Team</span>
+                        <h2>Meet Our Regional Teams</h2>
+                        <p className="section-description">
+                            Dedicated professionals serving across multiple states
+                        </p>
+                    </div>
+
+                    <div className="regional-teams-grid">
+                        <motion.div
+                            className="regional-team-card scroll-reveal"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                        >
+                            <div className="regional-team-image">
+                                <img
+                                    src="https://res.cloudinary.com/ddhhlkyut/image/upload/v1769335637/GOA_rfygca.png"
+                                    alt="Team Goa"
+                                />
+                            </div>
+                            <div className="regional-team-info">
+                                <h3>Team Goa</h3>
+                                <p>Our dedicated team serving clients across the beautiful state of Goa</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="regional-team-card scroll-reveal"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <div className="regional-team-image">
+                                <img
+                                    src="https://res.cloudinary.com/ddhhlkyut/image/upload/v1769335636/HP_wopxuk.png"
+                                    alt="Team Himachal Pradesh"
+                                />
+                            </div>
+                            <div className="regional-team-info">
+                                <h3>Team Himachal Pradesh</h3>
+                                <p>Our skilled professionals providing exceptional services in Himachal Pradesh</p>
+                            </div>
                         </motion.div>
                     </div>
                 </div>

@@ -117,6 +117,59 @@ const Team = () => {
                 </div>
             </section>
 
+            {/* Regional Teams Section */}
+            <section className="regional-teams-section section">
+                <div className="container">
+                    <div className="section-header scroll-reveal">
+                        <span className="section-badge">Our Team</span>
+                        <h2>Meet Our Regional Teams</h2>
+                        <p className="section-description">
+                            Dedicated professionals serving across multiple states
+                        </p>
+                    </div>
+
+                    <div className="regional-teams-grid">
+                        <motion.div
+                            className="regional-team-card scroll-reveal"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                        >
+                            <div className="regional-team-image">
+                                <img
+                                    src="https://res.cloudinary.com/ddhhlkyut/image/upload/v1769335637/GOA_rfygca.png"
+                                    alt="Team Goa"
+                                />
+                            </div>
+                            <div className="regional-team-info">
+                                <h3>Team Goa</h3>
+                                <p>Our dedicated team serving clients across the beautiful state of Goa</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="regional-team-card scroll-reveal"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <div className="regional-team-image">
+                                <img
+                                    src="https://res.cloudinary.com/ddhhlkyut/image/upload/v1769335636/HP_wopxuk.png"
+                                    alt="Team Himachal Pradesh"
+                                />
+                            </div>
+                            <div className="regional-team-info">
+                                <h3>Team Himachal Pradesh</h3>
+                                <p>Our skilled professionals providing exceptional services in Himachal Pradesh</p>
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
             {/* Clients Section */}
             <section className="clients-section section bg-gray">
                 <div className="container">

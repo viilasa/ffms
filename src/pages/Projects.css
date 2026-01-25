@@ -183,6 +183,78 @@
     font-weight: 500;
 }
 
+/* Regional Teams Section */
+.regional-teams-section {
+    background: var(--white);
+}
+
+.regional-teams-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.regional-team-card {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--gray-200);
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.regional-team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.regional-team-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.regional-team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.regional-team-card:hover .regional-team-image img {
+    transform: scale(1.05);
+}
+
+.regional-team-info {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(193, 39, 45, 0.03) 0%, rgba(193, 39, 45, 0.08) 100%);
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    margin: 0;
+}
+
+.regional-team-info h3 {
+    font-size: 1.75rem;
+    color: var(--gray-900);
+    margin: 0 0 0.75rem 0;
+    font-weight: 700;
+}
+
+.regional-team-info p {
+    color: var(--gray-600);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* Clients Section */
 .clients-grid {
     display: grid;
@@ -338,6 +410,15 @@
     .team-stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .regional-teams-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .regional-team-image {
+        height: 350px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -369,37 +450,201 @@
     .project-content {
         padding: 2rem 1.5rem;
     }
+
+    /* Regional Teams Mobile */
+    .regional-team-image {
+        height: 280px;
+    }
+
+    .regional-team-info {
+        padding: 1.5rem;
+    }
+
+    .regional-team-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .regional-team-info p {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
+    .projects-hero {
+        min-height: 35vh;
+        padding-top: 70px;
+    }
+
+    .projects-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .projects-hero-content p {
+        font-size: 0.9rem;
+    }
+
     .clients-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
     }
 
     .client-card {
-        padding: 1rem;
-        min-height: 140px;
+        padding: 0.875rem;
+        min-height: 130px;
     }
 
     .client-logo-box {
-        width: 80px;
-        height: 60px;
+        width: 70px;
+        height: 55px;
+        margin-bottom: 0.25rem;
     }
 
     .client-details .client-name {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
 
     .team-stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
     }
 
     .team-stat-card {
-        padding: 1.5rem 1rem;
+        padding: 1.25rem 0.75rem;
     }
 
     .team-stat-card .stat-number {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+    }
+
+    .team-stat-card .stat-label {
+        font-size: 0.8rem;
+    }
+
+    /* Regional Teams Small */
+    .regional-team-image {
+        height: 200px;
+    }
+
+    .regional-team-info {
+        padding: 1rem;
+    }
+
+    .regional-team-info h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .regional-team-info p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* Project Cards */
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 1.25rem 1rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-category {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .quote-icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .testimonial-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    /* Section badges and headers */
+    .section-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+
+    .section-header {
+        margin-bottom: 1.75rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .projects-hero-content h1 {
+        font-size: 1.35rem;
+    }
+
+    .team-stats-grid {
+        gap: 0.5rem;
+    }
+
+    .team-stat-card {
+        padding: 1rem 0.5rem;
+    }
+
+    .team-stat-card .stat-number {
+        font-size: 1.35rem;
+    }
+
+    .team-stat-card .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .regional-team-image {
+        height: 180px;
+    }
+
+    .regional-team-info h3 {
+        font-size: 1.05rem;
+    }
+
+    .client-card {
+        padding: 0.75rem;
+        min-height: 120px;
+    }
+
+    .client-logo-box {
+        width: 60px;
+        height: 45px;
+    }
+
+    .client-details .client-name {
+        font-size: 0.75rem;
+    }
+
+    .project-content h3 {
+        font-size: 1rem;
+    }
+
+    .testimonial-card {
+        padding: 1.25rem 1rem;
     }
 }
