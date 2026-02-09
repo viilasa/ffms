@@ -1,20 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isHidden, setIsHidden] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const lastScrollY = useRef(0);
     const location = useLocation();
-    const isTransparentPage = ['/', '/about', '/services', '/team', '/contact'].includes(location.pathname);
+    const isTransparentPage = ['/', '/about', '/services', '/team', '/contact', '/clients'].includes(location.pathname);
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
+            const currentY = window.scrollY;
+            setIsScrolled(currentY > 50);
+            if (currentY > lastScrollY.current && currentY > 100) {
+                setIsHidden(true);
+            } else {
+                setIsHidden(false);
+            }
+            lastScrollY.current = currentY;
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -27,11 +36,11 @@ const Navbar = () => {
         { path: '/about', label: 'About' },
         { path: '/services', label: 'Services' },
         { path: '/team', label: 'Team' },
-        { path: '/contact', label: 'Contact' }
+        { path: '/clients', label: 'Our Clients' }
     ];
 
     return (
-        <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${isTransparentPage && !isScrolled ? 'navbar-transparent' : ''}`}>
+        <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${isTransparentPage && !isScrolled ? 'navbar-transparent' : ''} ${isHidden ? 'navbar-hidden' : ''}`}>
             <div className="container">
                 <div className="navbar-content">
                     <Link to="/" className="navbar-logo">

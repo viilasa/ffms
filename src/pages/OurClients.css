@@ -1,0 +1,733 @@
+/* ========== PPT Presentation - Our Clients ========== */
+.clients-page {
+    overflow-x: hidden;
+}
+
+/* ========== Full-screen PPT Layout ========== */
+.ppt-presentation {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 90px;
+    background: #0f0f12;
+    position: relative;
+}
+
+/* ---------- Top Bar ---------- */
+.ppt-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    z-index: 20;
+    flex-shrink: 0;
+    min-height: 52px;
+}
+
+.ppt-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.ppt-brand-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 8px rgba(193, 39, 45, 0.5);
+}
+
+.ppt-brand-text {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--white);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ppt-brand-sep {
+    color: rgba(255, 255, 255, 0.15);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.ppt-brand-sub {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ppt-topbar-center {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+    font-family: var(--font-primary);
+}
+
+.ppt-counter {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.ppt-counter-sep {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.2);
+    margin: 0 0.1rem;
+}
+
+.ppt-counter-total {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.ppt-topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.ppt-playpause {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ppt-playpause:hover {
+    background: rgba(193, 39, 45, 0.15);
+    border-color: var(--primary);
+    color: var(--primary-light);
+}
+
+/* ---------- Progress Bar ---------- */
+.ppt-progress-track {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+    position: relative;
+}
+
+.ppt-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 12px rgba(193, 39, 45, 0.4);
+    will-change: width;
+}
+
+/* ---------- Slide Area ---------- */
+.ppt-slide-area {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem 4.5rem;
+    min-height: 65vh;
+}
+
+/* Arrows */
+.ppt-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(8px);
+}
+
+.ppt-arrow:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0 4px 20px rgba(193, 39, 45, 0.35);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.ppt-arrow-left { left: 1rem; }
+.ppt-arrow-right { right: 1rem; }
+
+/* ---------- Slide ---------- */
+.ppt-slide {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    background: linear-gradient(145deg, #1a1a20 0%, #16161c 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.03);
+    position: relative;
+    overflow: hidden;
+}
+
+.ppt-slide-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 60%, transparent 100%);
+    border-radius: 20px 0 0 20px;
+}
+
+.ppt-slide-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(193, 39, 45, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(193, 39, 45, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.ppt-slide-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 3rem 3.5rem;
+    position: relative;
+    z-index: 2;
+    gap: 0;
+}
+
+/* ---------- Left Panel ---------- */
+.ppt-left {
+    flex: 0 0 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-right: 2rem;
+}
+
+.ppt-logo-card {
+    width: 200px;
+    height: 200px;
+    background: var(--white);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    margin-bottom: 1.75rem;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.ppt-logo-card:hover {
+    transform: scale(1.03);
+}
+
+.ppt-logo-img {
+    max-width: 72%;
+    max-height: 72%;
+    object-fit: contain;
+}
+
+.ppt-logo-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppt-client-name {
+    font-family: var(--font-primary);
+    font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+}
+
+.ppt-client-location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.ppt-client-location svg {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.ppt-client-index {
+    position: absolute;
+    bottom: -0.5rem;
+    right: 2rem;
+    font-family: var(--font-primary);
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ---------- Divider ---------- */
+.ppt-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    padding: 0 1.5rem;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.ppt-divider-line {
+    width: 1px;
+    flex: 1;
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+}
+
+.ppt-divider-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 8px rgba(193, 39, 45, 0.4);
+    flex-shrink: 0;
+}
+
+/* ---------- Right Panel ---------- */
+.ppt-right {
+    flex: 1;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ppt-services-label {
+    margin-bottom: 0.5rem;
+}
+
+.ppt-services-tag {
+    display: inline-block;
+    background: rgba(193, 39, 45, 0.12);
+    color: var(--primary-light);
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 0.35rem 0.9rem;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(193, 39, 45, 0.2);
+}
+
+.ppt-services-title {
+    font-family: var(--font-primary);
+    font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.ppt-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.ppt-service-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.85rem 1.1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    transition: all 0.25s ease;
+}
+
+.ppt-service-row:hover {
+    background: rgba(193, 39, 45, 0.08);
+    border-color: rgba(193, 39, 45, 0.2);
+    transform: translateX(4px);
+}
+
+.ppt-service-num {
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--primary);
+    min-width: 20px;
+    opacity: 0.7;
+}
+
+.ppt-service-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+}
+
+.ppt-service-name {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Thumbnail Strip ---------- */
+.ppt-thumbs {
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.6rem 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+    flex-shrink: 0;
+}
+
+.ppt-thumbs::-webkit-scrollbar {
+    height: 3px;
+}
+
+.ppt-thumbs::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ppt-thumbs::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.ppt-thumbs-track {
+    display: flex;
+    gap: 0.35rem;
+    min-width: max-content;
+    padding: 0.2rem 0;
+}
+
+.ppt-thumb {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    background: none;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 76px;
+    flex-shrink: 0;
+}
+
+.ppt-thumb:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.ppt-thumb.thumb-active {
+    background: rgba(193, 39, 45, 0.08);
+    border-color: var(--primary);
+}
+
+.ppt-thumb-img-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ppt-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 3px;
+}
+
+.ppt-thumb-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppt-thumb-name {
+    font-family: var(--font-primary);
+    font-size: 0.58rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    line-height: 1.15;
+    max-width: 68px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.thumb-active .ppt-thumb-name {
+    color: var(--primary-light);
+}
+
+.ppt-thumb-bar {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2.5px;
+    background: var(--primary);
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(193, 39, 45, 0.4);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1100px) {
+    .ppt-slide-inner {
+        padding: 2rem 2.5rem;
+    }
+
+    .ppt-logo-card {
+        width: 170px;
+        height: 170px;
+    }
+
+    .ppt-client-index {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .ppt-slide-inner {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        overflow-y: auto;
+    }
+
+    .ppt-left {
+        flex: none;
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+
+    .ppt-logo-card {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 1rem;
+    }
+
+    .ppt-divider {
+        flex-direction: row;
+        padding: 0;
+        align-self: auto;
+        width: 80%;
+    }
+
+    .ppt-divider-line {
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+    }
+
+    .ppt-right {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .ppt-client-index {
+        display: none;
+    }
+
+    .ppt-slide-area {
+        padding: 1.5rem 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ppt-topbar {
+        padding: 0.6rem 1rem;
+        min-height: 44px;
+    }
+
+    .ppt-brand-sub { display: none; }
+    .ppt-brand-sep { display: none; }
+
+    .ppt-slide-area {
+        padding: 1rem 2.75rem;
+    }
+
+    .ppt-arrow {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+    }
+
+    .ppt-arrow-left { left: 0.5rem; }
+    .ppt-arrow-right { right: 0.5rem; }
+
+    .ppt-arrow svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .ppt-slide {
+        border-radius: 14px;
+    }
+
+    .ppt-slide-inner {
+        padding: 1.5rem;
+    }
+
+    .ppt-logo-card {
+        width: 110px;
+        height: 110px;
+        border-radius: 16px;
+        margin-bottom: 0.75rem;
+    }
+
+    .ppt-client-name {
+        font-size: 1.15rem;
+    }
+
+    .ppt-client-location {
+        font-size: 0.8rem;
+    }
+
+    .ppt-services-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ppt-service-row {
+        padding: 0.65rem 0.85rem;
+        gap: 0.65rem;
+        border-radius: 10px;
+    }
+
+    .ppt-service-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .ppt-service-name {
+        font-size: 0.8rem;
+    }
+
+    .ppt-service-num {
+        font-size: 0.6rem;
+        min-width: 16px;
+    }
+
+    .ppt-thumbs {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .ppt-thumb {
+        min-width: 62px;
+        padding: 0.3rem 0.4rem;
+    }
+
+    .ppt-thumb-img-wrap {
+        width: 34px;
+        height: 34px;
+    }
+
+    .ppt-thumb-name {
+        font-size: 0.52rem;
+        max-width: 56px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ppt-slide-area {
+        padding: 0.75rem 2.25rem;
+    }
+
+    .ppt-slide-inner {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+
+    .ppt-logo-card {
+        width: 90px;
+        height: 90px;
+        border-radius: 14px;
+    }
+
+    .ppt-services-list {
+        gap: 0.4rem;
+    }
+
+    .ppt-service-row {
+        padding: 0.55rem 0.7rem;
+    }
+
+    .ppt-service-icon {
+        width: 26px;
+        height: 26px;
+        font-size: 0.9rem;
+        border-radius: 7px;
+    }
+
+    .ppt-service-name {
+        font-size: 0.75rem;
+    }
+
+    .ppt-thumb {
+        min-width: 52px;
+    }
+
+    .ppt-thumb-img-wrap {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+    }
+}

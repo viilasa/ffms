@@ -3,182 +3,218 @@
         {
             "name": "Cipla Ltd",
             "location": "Verna, Goa",
-            "image": "https://www.greatplacetowork.in/great/api/assets/uploads/1997/logo/logo.png"
+            "image": "https://www.greatplacetowork.in/great/api/assets/uploads/1997/logo/logo.png",
+            "services": ["Housekeeping & Janitor Services", "HVAC Maintenance", "ETP & STP Operations", "Pest Control", "Waste Management"]
         },
         {
             "name": "Marksans Pharma Ltd",
             "location": "Goa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTcrwSdIvYFDQd2QzDJTaLnS7yskOWg7Jofw&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTcrwSdIvYFDQd2QzDJTaLnS7yskOWg7Jofw&s",
+            "services": ["Housekeeping Services", "Pest Control", "HVAC Maintenance", "Waste Management"]
         },
         {
             "name": "Abbott India Ltd",
             "location": "Goa",
-            "image": "https://www.abbott.co.in/etc.clientlibs/abbott-platform/clientlibs/clientlib-site/resources/images/abbott-logo.png"
+            "image": "https://www.abbott.co.in/etc.clientlibs/abbott-platform/clientlibs/clientlib-site/resources/images/abbott-logo.png",
+            "services": ["Housekeeping & Janitor Services", "Front Desk Management", "HVAC Maintenance", "Pest Control", "Gardening & Horticulture"]
         },
         {
             "name": "Glenmark Ltd",
             "location": "Goa",
-            "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Glenmark_Pharmaceuticals_logo.png"
+            "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Glenmark_Pharmaceuticals_logo.png",
+            "services": ["ETP & STP Operations", "Housekeeping Services", "HVAC Maintenance", "Security Services"]
         },
         {
             "name": "Medispray Ltd",
             "location": "Goa",
-            "image": "https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vbWVkaXNwcmF5LWxhYm9yYXRvcmllcy1vcmlnaW5hbC5qcGc.png"
+            "image": "https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vbWVkaXNwcmF5LWxhYm9yYXRvcmllcy1vcmlnaW5hbC5qcGc.png",
+            "services": ["Housekeeping Services", "Pest Control", "Waste Management", "Water Treatment Plant Maintenance"]
         },
         {
             "name": "TevaPharma",
             "location": "Goa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHV5FMDtP2odXLV8zv80LQ2peXPWzIqvSVvw&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHV5FMDtP2odXLV8zv80LQ2peXPWzIqvSVvw&s",
+            "services": ["Housekeeping & Janitor Services", "HVAC Maintenance", "ETP & STP Operations", "Pest Control"]
         },
         {
             "name": "Watson Pharma Ltd",
             "location": "Goa",
-            "image": "https://www.asianscientist.com/wp-content/uploads/bfi_thumb/Watson-Pharma-Buys-Ascent-Pharmahealth-for-AU375-Million-2rb0kgqjv950qyqylwpvk0.png"
+            "image": "https://www.asianscientist.com/wp-content/uploads/bfi_thumb/Watson-Pharma-Buys-Ascent-Pharmahealth-for-AU375-Million-2rb0kgqjv950qyqylwpvk0.png",
+            "services": ["Housekeeping Services", "HVAC Maintenance", "Pest Control", "Security Services", "Waste Management"]
         },
         {
             "name": "Sanofi India Pvt Ltd",
             "location": "Goa",
-            "image": "https://www.icicidirect.com/images/Sanofi-India-Ltd-202202241057019585808.png"
+            "image": "https://www.icicidirect.com/images/Sanofi-India-Ltd-202202241057019585808.png",
+            "services": ["Housekeeping & Janitor Services", "Front Desk Management", "HVAC Maintenance", "ETP & STP Operations", "Gardening & Horticulture"]
         },
         {
             "name": "Indoco Remedies Ltd",
             "location": "Goa",
-            "image": "https://media.licdn.com/dms/image/v2/D4D0BAQEB6JDU_A4YdA/company-logo_200_200/company-logo_200_200/0/1695807314165/indoco_remedies_ltd_logo?e=2147483647&v=beta&t=70ngmPYZZc9KNCrlVbRJz8xuDr9GLxSKCamwbEhxJzI"
+            "image": "https://media.licdn.com/dms/image/v2/D4D0BAQEB6JDU_A4YdA/company-logo_200_200/company-logo_200_200/0/1695807314165/indoco_remedies_ltd_logo?e=2147483647&v=beta&t=70ngmPYZZc9KNCrlVbRJz8xuDr9GLxSKCamwbEhxJzI",
+            "services": ["Housekeeping Services", "Pest Control", "HVAC Maintenance", "Waste Management"]
         },
         {
             "name": "FDC Ltd",
             "location": "Goa",
-            "image": "https://www.fdcindia.com/images/favicon-green.svg"
+            "image": "https://www.fdcindia.com/images/favicon-green.svg",
+            "services": ["Housekeeping & Janitor Services", "Pest Control", "ETP & STP Operations", "Security Services"]
         },
         {
             "name": "Crompton Greaves ",
             "location": "Goa",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Crompton_Greaves_Logo.svg/1200px-Crompton_Greaves_Logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Crompton_Greaves_Logo.svg/1200px-Crompton_Greaves_Logo.svg.png",
+            "services": ["Electrical Maintenance", "Mechanical Maintenance", "Housekeeping Services", "HVAC Maintenance"]
         },
         {
             "name": "Tebma Shipyard Ltd",
             "location": "Udupi, Karnataka",
-            "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDu1eVjBaClWABpSMBmLvLP0PclHeriLy7Qz9zSCMTSBfrCimdyWjenVhjrI2PDdBctrtKagUCCC6-hcqvfFMS6eMUt1-CXkcgKUxxwDoM68OQenddTguJaTdm10Q4wnoSCRtaC4feVoY/s390/Screenshot_55.png"
+            "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDu1eVjBaClWABpSMBmLvLP0PclHeriLy7Qz9zSCMTSBfrCimdyWjenVhjrI2PDdBctrtKagUCCC6-hcqvfFMS6eMUt1-CXkcgKUxxwDoM68OQenddTguJaTdm10Q4wnoSCRtaC4feVoY/s390/Screenshot_55.png",
+            "services": ["Security Services", "Housekeeping Services", "Mechanical Maintenance", "Waste Management"]
         },
         {
             "name": "Adani Wilmer Ltd",
             "location": "Mangalore, Karnataka",
-            "image": "https://stoxbox.in/wp-content/uploads/2023/07/IPO_Adani_wilmar.jpg"
+            "image": "https://stoxbox.in/wp-content/uploads/2023/07/IPO_Adani_wilmar.jpg",
+            "services": ["Housekeeping & Janitor Services", "Pest Control", "HVAC Maintenance", "Waste Management", "Security Services"]
         },
         {
             "name": "Bharati Shipyard Ltd",
             "location": "Mangalore, Karnataka",
-            "image": "https://images.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.100401173532.v5i8/catalogue/bharati-shipyard-ltd-corporate-office-andheri-west-mumbai-ship-building-services-34kf4aj.jpg"
+            "image": "https://images.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.100401173532.v5i8/catalogue/bharati-shipyard-ltd-corporate-office-andheri-west-mumbai-ship-building-services-34kf4aj.jpg",
+            "services": ["Security Services", "Housekeeping Services", "Electrical Maintenance", "Plumbing"]
         },
         {
             "name": "Lamina Suspense ",
             "location": "Mangalore",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxcuQsN_237iZmP0qLyT3AfWX-EKkYlj6sg&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxcuQsN_237iZmP0qLyT3AfWX-EKkYlj6sg&s",
+            "services": ["Mechanical Maintenance", "Housekeeping Services", "Electrical Maintenance", "HVAC Maintenance"]
         },
         {
             "name": "Prakruti Products ",
             "location": "Karnataka",
-            "image": "https://www.ingredientsnetwork.com/Prakruti_jpeg%20-%20Copy-comp285264.jpg"
+            "image": "https://www.ingredientsnetwork.com/Prakruti_jpeg%20-%20Copy-comp285264.jpg",
+            "services": ["Housekeeping Services", "Pest Control", "Waste Management", "Gardening & Horticulture"]
         },
         {
             "name": "Dr. Kurade's",
             "location": "Goa",
-            "image": "https://drkurades.com/wp-content/uploads/2023/02/Dr-kurades-logo-1.webp"
+            "image": "https://drkurades.com/wp-content/uploads/2023/02/Dr-kurades-logo-1.webp",
+            "services": ["Housekeeping & Janitor Services", "Pest Control", "Front Desk Management"]
         },
         {
             "name": "Johnson and Johnson",
             "location": "Himachal Pradesh",
-            "image": "https://pharmaphorum.com/wp-content/uploads/2016/06/JJ-logo.jpg"
+            "image": "https://pharmaphorum.com/wp-content/uploads/2016/06/JJ-logo.jpg",
+            "services": ["Housekeeping & Janitor Services", "HVAC Maintenance", "ETP & STP Operations", "Pest Control", "Security Services", "Gardening & Horticulture"]
         },
         {
             "name": "Mars International ",
             "location": "Himachal Pradesh",
-            "image": "https://img-cdn.thepublive.com/filters:format(webp)/afaqs/media/post_attachments/b307007b9c77df92e31b0263878a41dc765245179fef8cae100b529542568b12.jpg"
+            "image": "https://img-cdn.thepublive.com/filters:format(webp)/afaqs/media/post_attachments/b307007b9c77df92e31b0263878a41dc765245179fef8cae100b529542568b12.jpg",
+            "services": ["Housekeeping Services", "Pest Control", "Catering & Pantry Services", "Waste Management"]
         },
         {
             "name": "Zuari Agro Products",
             "location": "Goa",
-            "image": "https://images.assettype.com/fortune-india/import/company/logos/Zuari%20Agro%20Chemicals.png"
+            "image": "https://images.assettype.com/fortune-india/import/company/logos/Zuari%20Agro%20Chemicals.png",
+            "services": ["ETP & STP Operations", "Waste Management", "Housekeeping Services", "Gardening & Horticulture", "Pest Control"]
         },
         {
             "name": "ABF Engineering ",
             "location": "Karnataka",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8feVnd8Zw8nNDWs81iEa2K__RU46vOkT4hg&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8feVnd8Zw8nNDWs81iEa2K__RU46vOkT4hg&s",
+            "services": ["Electrical Maintenance", "Mechanical Maintenance", "HVAC Maintenance", "Plumbing"]
         },
         {
             "name": "ABCO Steels",
             "location": "Karnataka",
-            "image": "https://media.licdn.com/dms/image/v2/C560BAQFzwJqS7z048w/company-logo_200_200/company-logo_200_200/0/1630999099944/abcosteel_logo?e=2147483647&v=beta&t=n-XbmSJTrKX95GQZxjGNLgPW90cSgI3TISAPhBO7ey4"
+            "image": "https://media.licdn.com/dms/image/v2/C560BAQFzwJqS7z048w/company-logo_200_200/company-logo_200_200/0/1630999099944/abcosteel_logo?e=2147483647&v=beta&t=n-XbmSJTrKX95GQZxjGNLgPW90cSgI3TISAPhBO7ey4",
+            "services": ["Mechanical Maintenance", "Housekeeping Services", "Security Services", "Waste Management"]
         },
         {
             "name": "Pentair Water ",
             "location": "Goa",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnlOPDCei1gauG8uBxmv6fFaprK7iQFZPdeA&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnlOPDCei1gauG8uBxmv6fFaprK7iQFZPdeA&s",
+            "services": ["Water Treatment Plant Maintenance", "Plumbing", "Housekeeping Services", "HVAC Maintenance"]
         },
         {
             "name": "Encube Ethicals ",
             "location": "Goa",
-            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQGLzyokarkvHA/company-logo_200_200/company-logo_200_200/0/1630563330204/encube_ethicals_pvt_ltd_logo?e=2147483647&v=beta&t=iNIlj4cPIsg4c468TkR33YOKJ-T6wVTbOQr6PlSI2SU"
+            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQGLzyokarkvHA/company-logo_200_200/company-logo_200_200/0/1630563330204/encube_ethicals_pvt_ltd_logo?e=2147483647&v=beta&t=iNIlj4cPIsg4c468TkR33YOKJ-T6wVTbOQr6PlSI2SU",
+            "services": ["Housekeeping & Janitor Services", "Pest Control", "ETP & STP Operations", "HVAC Maintenance"]
         },
         {
             "name": "Four M Propac",
             "location": "Himachal Pradesh",
-            "image": "https://image.pitchbook.com/QbOo4IIsJ5pRGOBlhEMPChmFq3c1605379096537_200x200"
+            "image": "https://image.pitchbook.com/QbOo4IIsJ5pRGOBlhEMPChmFq3c1605379096537_200x200",
+            "services": ["Housekeeping Services", "Mechanical Maintenance", "Waste Management", "Security Services"]
         },
         {
             "name": "JRG Foundries",
             "location": "Karnataka",
-            "image": "https://media.licdn.com/dms/image/v2/C560BAQH9YCmKr0InvQ/company-logo_200_200/company-logo_200_200/0/1630670600859/jrg_foundries_logo?e=2147483647&v=beta&t=ZykQI2IIw7I1vMiue1eEG9K0-0C5pocwVltRc-VzW78"
+            "image": "https://media.licdn.com/dms/image/v2/C560BAQH9YCmKr0InvQ/company-logo_200_200/company-logo_200_200/0/1630670600859/jrg_foundries_logo?e=2147483647&v=beta&t=ZykQI2IIw7I1vMiue1eEG9K0-0C5pocwVltRc-VzW78",
+            "services": ["Mechanical Maintenance", "Electrical Maintenance", "Housekeeping Services", "Waste Management"]
         },
         {
             "name": "Manjunath Tyresoles",
             "location": "Karnataka",
-            "image": "https://i.tracxn.com/logo/company/manjunathrubber.in_Logo_9886be17-7d93-4fda-8757-6b507f28d293.jpg?format=webp&height=120&width=120"
+            "image": "https://i.tracxn.com/logo/company/manjunathrubber.in_Logo_9886be17-7d93-4fda-8757-6b507f28d293.jpg?format=webp&height=120&width=120",
+            "services": ["Housekeeping Services", "Mechanical Maintenance", "Waste Management", "Security Services"]
         },
         {
             "name": "Prakruti Life Science",
             "location": "Karnataka",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8Wl1gxqo-jOS_occIYhuFSt_x3OQfiX0Hg&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8Wl1gxqo-jOS_occIYhuFSt_x3OQfiX0Hg&s",
+            "services": ["Housekeeping & Janitor Services", "Pest Control", "ETP & STP Operations", "Gardening & Horticulture"]
         },
         {
             "name": "Sodexo India services",
             "location": "Goa",
-            "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-05/04/full/20230504145530.jpg"
+            "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-05/04/full/20230504145530.jpg",
+            "services": ["Catering & Pantry Services", "Housekeeping Services", "Front Desk Management"]
         },
         {
             "name": "SES Engineering ",
             "location": "Goa",
-            "image": "https://static.wixstatic.com/media/ab3145_a5af1b30877c4faeb43807ce5bb8693a~mv2.jpg/v1/fill/w_1000,h_625,al_c,q_85,usm_0.66_1.00_0.01/ab3145_a5af1b30877c4faeb43807ce5bb8693a~mv2.jpg"
+            "image": "https://static.wixstatic.com/media/ab3145_a5af1b30877c4faeb43807ce5bb8693a~mv2.jpg/v1/fill/w_1000,h_625,al_c,q_85,usm_0.66_1.00_0.01/ab3145_a5af1b30877c4faeb43807ce5bb8693a~mv2.jpg",
+            "services": ["Electrical Maintenance", "Mechanical Maintenance", "HVAC Maintenance", "Plumbing"]
         },
         {
             "name": "Praksons Extracts  ",
             "location": "Karnataka",
-            "image": "https://static.wixstatic.com/media/026567_d07f1f4755344062b67ae2cdb7745395~mv2.png"
+            "image": "https://static.wixstatic.com/media/026567_d07f1f4755344062b67ae2cdb7745395~mv2.png",
+            "services": ["Housekeeping Services", "Pest Control", "Waste Management", "Water Treatment Plant Maintenance"]
         },
         {
             "name": "Fin Power",
             "location": "Karnataka",
-            "image": "https://www.universalhunt.com/unihunt_databank/logos/A/logo_34531440743956.jpg"
+            "image": "https://www.universalhunt.com/unihunt_databank/logos/A/logo_34531440743956.jpg",
+            "services": ["Electrical Maintenance", "Mechanical Maintenance", "Housekeeping Services", "HVAC Maintenance"]
         },
         {
             "name": "Global Conveyers ",
             "location": "Goa",
-            "image": "https://static.wixstatic.com/media/1d6700_80b9fa35017743f8942bb4742e593587~mv2.png/v1/fit/w_2500,h_1330,al_c/1d6700_80b9fa35017743f8942bb4742e593587~mv2.png"
+            "image": "https://static.wixstatic.com/media/1d6700_80b9fa35017743f8942bb4742e593587~mv2.png/v1/fit/w_2500,h_1330,al_c/1d6700_80b9fa35017743f8942bb4742e593587~mv2.png",
+            "services": ["Mechanical Maintenance", "Housekeeping Services", "Electrical Maintenance", "Security Services"]
         },
         {
             "name": "Meditab Specialities ",
             "location": "Goa",
-            "image": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1506075210/iotel6izjnnsps2vcxcj.png?ik-sanitizeSvg=true"
+            "image": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1506075210/iotel6izjnnsps2vcxcj.png?ik-sanitizeSvg=true",
+            "services": ["Housekeeping & Janitor Services", "Pest Control", "HVAC Maintenance", "ETP & STP Operations"]
         },
         {
             "name": "Prakruti Infra Pvt Ltd",
             "location": "Karnataka",
-            "image": "https://content.jdmagicbox.com/v2/comp/bangalore/16/080pk011616/catalogue/prakruthi-infra-and-shelters-india-pvt-ltd-hebbal-bangalore-land-developers-01lr78c23x.jpg"
+            "image": "https://content.jdmagicbox.com/v2/comp/bangalore/16/080pk011616/catalogue/prakruthi-infra-and-shelters-india-pvt-ltd-hebbal-bangalore-land-developers-01lr78c23x.jpg",
+            "services": ["Housekeeping Services", "Security Services", "Gardening & Horticulture", "Plumbing"]
         },
         {
             "name": "Mangalore Force",
             "location": "Karnataka",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCocRQrmxfccJ7iGSLDb33Pj2UbTvQpOOLg&s"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCocRQrmxfccJ7iGSLDb33Pj2UbTvQpOOLg&s",
+            "services": ["Mechanical Maintenance", "Electrical Maintenance", "Housekeeping Services", "Security Services"]
         }
     ]
 }
