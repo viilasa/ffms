@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import './About.css';
 
 const About = () => {
@@ -45,6 +46,12 @@ const About = () => {
 
     return (
         <div className="about-page">
+            <SEO
+                title="About Us"
+                description="Learn about Fresh Facility Management Services - Goa's trusted facility management company with 15+ years of experience serving 30+ clients across pharma, hospitality, and industrial sectors."
+                keywords="about ffms, facility management company goa, ffms history, facility management experience, goa facility services"
+                path="/about"
+            />
             {/* Hero Section */}
             <section className="about-hero">
                 <div className="about-hero-overlay"></div>

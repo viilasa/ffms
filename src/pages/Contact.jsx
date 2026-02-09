@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const Contact = () => {
@@ -107,6 +108,12 @@ const Contact = () => {
 
     return (
         <div className="contact-page">
+            <SEO
+                title="Contact Us"
+                description="Get in touch with Fresh Facility Management Services. Request a quote for housekeeping, HVAC, security, pest control, and other facility management services in Goa."
+                keywords="contact ffms, facility management quote, ffms goa contact, hire facility management, facility services enquiry"
+                path="/contact"
+            />
             {/* Hero Section */}
             <section className="contact-hero">
                 <div className="contact-hero-overlay"></div>

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import clientsData from '../data/clients.json';
+import SEO from '../components/SEO';
 import './OurClients.css';
 
 const SLIDE_DURATION = 6000;
@@ -110,6 +111,12 @@ const OurClients = () => {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => { setIsPaused(false); startTimeRef.current = Date.now() - (progress / 100) * SLIDE_DURATION; }}
         >
+            <SEO
+                title="Our Clients"
+                description="Trusted by 30+ leading organizations including Cipla, Abbott, Glenmark, Zuari Cement, and more. FFMS delivers tailored facility management solutions across pharma, industrial, and hospitality sectors in Goa."
+                keywords="ffms clients, facility management clients goa, cipla facility management, abbott housekeeping, pharma facility services, industrial facility management goa"
+                path="/clients"
+            />
             {/* PPT-style Full Presentation */}
             <section className="ppt-presentation">
                 {/* Top Bar */}

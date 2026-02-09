@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import clientsData from '../data/clients.json';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
@@ -92,6 +93,12 @@ const Home = () => {
 
     return (
         <div className="home">
+            <SEO
+                title="Home"
+                description="Fresh Facility Management Services (FFMS) - Leading facility management company in Goa with 15+ years of excellence. Housekeeping, HVAC, security, pest control, and comprehensive facility solutions."
+                keywords="facility management goa, housekeeping services goa, HVAC maintenance, security services, pest control goa, fresh facility management, ffms india, facility solutions"
+                path="/"
+            />
             {/* Hero Section - Full Screen with Skyscraper Background */}
             <section className="hero">
                 <div className="hero-background">

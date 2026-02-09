@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import clientsData from '../data/clients.json';
+import SEO from '../components/SEO';
 import './Projects.css';
 
 const Team = () => {
@@ -40,6 +41,12 @@ const Team = () => {
 
     return (
         <div className="projects-page">
+            <SEO
+                title="Our Team"
+                description="Meet the trained and dedicated team behind FFMS. Our workforce undergoes rigorous safety training, soft skills development, and technical certifications across 3+ states."
+                keywords="ffms team, facility management team goa, trained workforce, safety training, facility staff"
+                path="/team"
+            />
             {/* Hero Section */}
             <section className="projects-hero">
                 <div className="projects-hero-overlay"></div>

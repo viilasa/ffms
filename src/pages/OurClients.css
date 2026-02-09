@@ -1,6 +1,7 @@
 /* ========== PPT Presentation - Our Clients ========== */
 .clients-page {
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* ========== Full-screen PPT Layout ========== */
@@ -544,36 +545,51 @@
 }
 
 @media (max-width: 900px) {
+    .ppt-presentation {
+        padding-top: 80px;
+    }
+
     .ppt-slide-inner {
         flex-direction: column;
-        padding: 2rem;
-        gap: 1.5rem;
+        padding: 1.5rem;
+        gap: 1.25rem;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .ppt-left {
         flex: none;
         padding-right: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
     }
 
     .ppt-logo-card {
-        width: 140px;
-        height: 140px;
-        margin-bottom: 1rem;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0.75rem;
+        border-radius: 18px;
+    }
+
+    .ppt-client-name {
+        font-size: 1.25rem;
     }
 
     .ppt-divider {
         flex-direction: row;
         padding: 0;
         align-self: auto;
-        width: 80%;
+        width: 60%;
     }
 
     .ppt-divider-line {
         height: 1px;
         width: 100%;
         background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+    }
+
+    .ppt-divider-dot {
+        width: 5px;
+        height: 5px;
     }
 
     .ppt-right {
@@ -586,109 +602,58 @@
     }
 
     .ppt-slide-area {
-        padding: 1.5rem 3.5rem;
+        padding: 1rem 3rem;
+        min-height: 55vh;
+    }
+
+    .ppt-services-title {
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 768px) {
+    .ppt-presentation {
+        padding-top: 75px;
+    }
+
     .ppt-topbar {
-        padding: 0.6rem 1rem;
-        min-height: 44px;
+        padding: 0.5rem 0.75rem;
+        min-height: 40px;
     }
 
     .ppt-brand-sub { display: none; }
     .ppt-brand-sep { display: none; }
+    .ppt-brand-dot { width: 6px; height: 6px; }
+
+    .ppt-counter { font-size: 1rem; }
+    .ppt-counter-total { font-size: 0.75rem; }
 
     .ppt-slide-area {
-        padding: 1rem 2.75rem;
+        padding: 0.75rem 2.5rem;
+        min-height: 50vh;
     }
 
     .ppt-arrow {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
         border-radius: 8px;
     }
 
-    .ppt-arrow-left { left: 0.5rem; }
-    .ppt-arrow-right { right: 0.5rem; }
+    .ppt-arrow-left { left: 0.35rem; }
+    .ppt-arrow-right { right: 0.35rem; }
 
     .ppt-arrow svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
     }
 
     .ppt-slide {
-        border-radius: 14px;
+        border-radius: 12px;
     }
 
-    .ppt-slide-inner {
-        padding: 1.5rem;
-    }
-
-    .ppt-logo-card {
-        width: 110px;
-        height: 110px;
-        border-radius: 16px;
-        margin-bottom: 0.75rem;
-    }
-
-    .ppt-client-name {
-        font-size: 1.15rem;
-    }
-
-    .ppt-client-location {
-        font-size: 0.8rem;
-    }
-
-    .ppt-services-title {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-    }
-
-    .ppt-service-row {
-        padding: 0.65rem 0.85rem;
-        gap: 0.65rem;
-        border-radius: 10px;
-    }
-
-    .ppt-service-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 1rem;
-    }
-
-    .ppt-service-name {
-        font-size: 0.8rem;
-    }
-
-    .ppt-service-num {
-        font-size: 0.6rem;
-        min-width: 16px;
-    }
-
-    .ppt-thumbs {
-        padding: 0.5rem 0.75rem;
-    }
-
-    .ppt-thumb {
-        min-width: 62px;
-        padding: 0.3rem 0.4rem;
-    }
-
-    .ppt-thumb-img-wrap {
-        width: 34px;
-        height: 34px;
-    }
-
-    .ppt-thumb-name {
-        font-size: 0.52rem;
-        max-width: 56px;
-    }
-}
-
-@media (max-width: 480px) {
-    .ppt-slide-area {
-        padding: 0.75rem 2.25rem;
+    .ppt-slide-accent {
+        width: 3px;
     }
 
     .ppt-slide-inner {
@@ -700,6 +665,31 @@
         width: 90px;
         height: 90px;
         border-radius: 14px;
+        margin-bottom: 0.6rem;
+    }
+
+    .ppt-client-name {
+        font-size: 1.05rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .ppt-client-location {
+        font-size: 0.75rem;
+    }
+
+    .ppt-client-location svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .ppt-services-tag {
+        font-size: 0.6rem;
+        padding: 0.25rem 0.65rem;
+    }
+
+    .ppt-services-title {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
     }
 
     .ppt-services-list {
@@ -708,11 +698,13 @@
 
     .ppt-service-row {
         padding: 0.55rem 0.7rem;
+        gap: 0.5rem;
+        border-radius: 8px;
     }
 
     .ppt-service-icon {
-        width: 26px;
-        height: 26px;
+        width: 28px;
+        height: 28px;
         font-size: 0.9rem;
         border-radius: 7px;
     }
@@ -721,13 +713,206 @@
         font-size: 0.75rem;
     }
 
+    .ppt-service-num {
+        font-size: 0.55rem;
+        min-width: 14px;
+    }
+
+    .ppt-thumbs {
+        padding: 0.4rem 0.5rem;
+    }
+
     .ppt-thumb {
-        min-width: 52px;
+        min-width: 56px;
+        padding: 0.25rem 0.35rem;
+        gap: 0.2rem;
     }
 
     .ppt-thumb-img-wrap {
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+    }
+
+    .ppt-thumb-name {
+        font-size: 0.48rem;
+        max-width: 50px;
+    }
+
+    .ppt-thumb-bar {
+        width: 16px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ppt-presentation {
+        padding-top: 70px;
+    }
+
+    .ppt-topbar {
+        padding: 0.4rem 0.6rem;
+        min-height: 36px;
+    }
+
+    .ppt-playpause {
+        width: 28px;
+        height: 28px;
+    }
+
+    .ppt-playpause svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .ppt-slide-area {
+        padding: 0.5rem 1.75rem;
+        min-height: 45vh;
+    }
+
+    .ppt-arrow {
         width: 28px;
         height: 28px;
         border-radius: 6px;
+    }
+
+    .ppt-arrow-left { left: 0.2rem; }
+    .ppt-arrow-right { right: 0.2rem; }
+
+    .ppt-arrow svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .ppt-slide {
+        border-radius: 10px;
+    }
+
+    .ppt-slide-inner {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .ppt-left {
+        padding-bottom: 0.25rem;
+    }
+
+    .ppt-logo-card {
+        width: 72px;
+        height: 72px;
+        border-radius: 12px;
+        margin-bottom: 0.5rem;
+    }
+
+    .ppt-logo-img {
+        max-width: 65%;
+        max-height: 65%;
+    }
+
+    .ppt-client-name {
+        font-size: 0.95rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .ppt-client-location {
+        font-size: 0.7rem;
+        gap: 0.25rem;
+    }
+
+    .ppt-divider {
+        width: 50%;
+    }
+
+    .ppt-services-label {
+        margin-bottom: 0.3rem;
+    }
+
+    .ppt-services-tag {
+        font-size: 0.55rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .ppt-services-title {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .ppt-services-list {
+        gap: 0.3rem;
+    }
+
+    .ppt-service-row {
+        padding: 0.45rem 0.55rem;
+        gap: 0.4rem;
+        border-radius: 7px;
+    }
+
+    .ppt-service-num {
+        display: none;
+    }
+
+    .ppt-service-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+
+    .ppt-service-name {
+        font-size: 0.7rem;
+    }
+
+    .ppt-thumbs {
+        padding: 0.35rem 0.4rem;
+    }
+
+    .ppt-thumb {
+        min-width: 46px;
+        padding: 0.2rem 0.25rem;
+    }
+
+    .ppt-thumb-img-wrap {
+        width: 26px;
+        height: 26px;
+        border-radius: 5px;
+    }
+
+    .ppt-thumb-name {
+        font-size: 0.42rem;
+        max-width: 42px;
+    }
+}
+
+@media (max-width: 360px) {
+    .ppt-slide-area {
+        padding: 0.4rem 1.5rem;
+    }
+
+    .ppt-slide-inner {
+        padding: 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .ppt-logo-card {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .ppt-client-name {
+        font-size: 0.85rem;
+    }
+
+    .ppt-service-row {
+        padding: 0.4rem 0.45rem;
+    }
+
+    .ppt-service-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .ppt-service-name {
+        font-size: 0.65rem;
     }
 }

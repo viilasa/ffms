@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './Services.css';
 
 const Services = () => {
@@ -84,6 +85,12 @@ const Services = () => {
 
     return (
         <div className="services-page">
+            <SEO
+                title="Our Services"
+                description="Comprehensive facility management services in Goa - Housekeeping, HVAC maintenance, ETP/STP operations, pest control, security services, facade cleaning, gardening, and more."
+                keywords="housekeeping services, HVAC maintenance goa, pest control services, security services goa, ETP STP operations, facade cleaning, gardening horticulture, facility management services"
+                path="/services"
+            />
             {/* Hero Section */}
             <section className="services-hero">
                 <div className="services-hero-overlay"></div>
