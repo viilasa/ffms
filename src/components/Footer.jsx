@@ -127,6 +127,9 @@ const Footer = () => {
                             <Link to="/terms">Terms of Service</Link>
                         </div>
                     </div>
+                     <p style={{ textAlign: 'center', marginTop: '8px', fontSize: '0.8rem', opacity: 0.6 }}>
+            Made by <a href="https://surya.viilasa.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Viilasa</a>
+        </p>
                 </div>
             </div>
         </footer>
