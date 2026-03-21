@@ -3,6 +3,10 @@ import { useState } from 'react';
 import SEO from '../components/SEO';
 import './Contact.css';
 
+const GOOGLE_MAPS_APP_URL = 'https://maps.app.goo.gl/6T4eZ8NTQLnqHZRB9';
+const GOOGLE_MAPS_EMBED_SRC =
+    'https://www.google.com/maps?q=15.374063%2C73.927910&z=17&output=embed';
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -323,7 +327,7 @@ const Contact = () => {
             <section className="map-section">
                 <div className="map-container">
                     <iframe
-                        src="https://maps.app.goo.gl/6T4eZ8NTQLnqHZRB9"
+                        src={GOOGLE_MAPS_EMBED_SRC}
                         width="100%"
                         height="500"
                         style={{ border: 0 }}
@@ -333,6 +337,14 @@ const Contact = () => {
                         title="FFMS Location"
                     ></iframe>
                 </div>
+                <a
+                    href={GOOGLE_MAPS_APP_URL}
+                    className="map-external-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open in Google Maps
+                </a>
             </section>
         </div>
     );
