@@ -224,7 +224,7 @@ const Home = () => {
                         >
                             <div className="regional-team-image">
                                 <img
-                                    src="https://res.cloudinary.com/ddhhlkyut/image/upload/v1769335637/GOA_rfygca.png"
+                                    src="https://res.cloudinary.com/ddhhlkyut/image/upload/v1774084170/goa_mxhqej.jpg"
                                     alt="Team Goa"
                                 />
                             </div>
