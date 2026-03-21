@@ -323,7 +323,7 @@ const Contact = () => {
             <section className="map-section">
                 <div className="map-container">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.0123456789!2d73.9876543!3d15.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDIwJzQ0LjQiTiA3M8KwNTknMTUuNiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                        src="https://maps.app.goo.gl/6T4eZ8NTQLnqHZRB9"
                         width="100%"
                         height="500"
                         style={{ border: 0 }}
