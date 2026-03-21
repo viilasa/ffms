@@ -30,7 +30,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://formsubmit.co/ajax/info@ffmsindia.com', {
+            const response = await fetch('https://formsubmit.co/ajax/ffmsgoa@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ const Contact = () => {
                 </svg>
             ),
             title: 'Email Us',
-            details: 'info@ffmsindia.com\nffmsgoa@gmail.com\nfreshfacilitymanagement@gmail.com'
+            details: 'ffmsgoa@gmail.com\nfreshfacilitymanagement@gmail.com'
         },
         {
             icon: (
