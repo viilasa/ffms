@@ -30,7 +30,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://formsubmit.co/ajax/ffmsgoa@gmail.com', {
+            const response = await fetch('https://formsubmit.co/ajax/viilasacontact@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
